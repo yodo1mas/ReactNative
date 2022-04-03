@@ -8,7 +8,7 @@ export const hasReward = () => {
 }
 
 export const setReward = () => {
-  // Your code here to store that the user earned a reward
+  // Your code here to confirm that the user earned a reward
   // Redux, AsyncStorage, etc...
 }
 
