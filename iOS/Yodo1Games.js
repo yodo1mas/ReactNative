@@ -69,14 +69,21 @@ export const registerYodoAds = () => {
   return eventListener
 }
 
-export const showInterstitialAdss = async () => {
+export const showBannerAds = async () => {
+  //const adsAvailable = await Yodo1MASAds.isInitialized()
+  //adsAvailable && 
+  Yodo1MASAds.showBannerAds()
+  
+}
+
+export const showInterstitialAds = async () => {
   //const adsAvailable = await Yodo1MASAds.isInitialized()
   //adsAvailable && 
   Yodo1MASAds.showIntertstialAds()
   
 }
 
-export const showRewardedAdss = async () => {
+export const showRewardedAds = async () => {
  // const adsAvailable = await Yodo1MASAds.isInitialized()
  // adsAvailable ? 
  Yodo1MASAds.showRewardedAds() //: setReward()
