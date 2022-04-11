@@ -103,7 +103,7 @@ RCT_EXPORT_METHOD(showBannerAds) {
   dispatch_async(dispatch_get_main_queue(), ^{
     Yodo1MasAdBannerAlign align = Yodo1MasAdBannerAlignBottom | Yodo1MasAdBannerAlignHorizontalCenter;
     CGPoint point = CGPointMake(10.0f, 10.0f);
-    [[Yodo1Mas sharedInstance] show  showBannerAdWithAlign:align offset:point];
+    [[Yodo1Mas sharedInstance] showBannerAdWithAlign:align offset:point];
   });
 }
  
