@@ -100,11 +100,11 @@ RCT_EXPORT_METHOD(showIntertstialAds) {
 }
  
 RCT_EXPORT_METHOD(showBannerAds) {
-  NSLog(@"Yodo1MASAds: called showBannerAds, use Component instead after Yodo Init for iOS");
-  Yodo1MasAdBannerAlign align = Yodo1MasAdBannerAlignTop | Yodo1MasAdBannerAlignHorizontalCenter;
-  CGPoint point = CGPointMake(10.0f, 10.0f);
-  [[Yodo1Mas sharedInstance] showBannerAdWithAlign:align offset:point];
-   
+  dispatch_async(dispatch_get_main_queue(), ^{
+    Yodo1MasAdBannerAlign align = Yodo1MasAdBannerAlignBottom | Yodo1MasAdBannerAlignHorizontalCenter;
+    CGPoint point = CGPointMake(10.0f, 10.0f);
+    [[Yodo1Mas sharedInstance] showBannerAdWithAlign:align offset:point];
+  });
 }
  
 // To export a module named Yodo1MASAds
